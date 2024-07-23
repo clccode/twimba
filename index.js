@@ -74,7 +74,7 @@ function handleReplyBtnClick(tweetId){
 }
 
 function handleTweetBtnClick(){
-    let tweetsData = JSON.parse(localStorage.getItem('tweetsData')) || []
+    const tweetInput = document.getElementById('tweet-input')
 
     if(tweetInput.value){
         tweetsData.unshift({
